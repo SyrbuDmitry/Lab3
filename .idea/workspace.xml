@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="533f3228-f4a6-4b3b-841f-fc90b4ac3cb7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
-    </list>
+    <list default="true" id="533f3228-f4a6-4b3b-841f-fc90b4ac3cb7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -258,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571238082378</updated>
-      <workItem from="1571238086131" duration="924000" />
+      <workItem from="1571238086131" duration="949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="924000" />
+    <option name="totallyTimeSpent" value="949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="194" y="210" width="1086" height="877" extended-state="0" />
@@ -314,6 +312,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/664600583_T_ONTIME_sample.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
