@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="533f3228-f4a6-4b3b-841f-fc90b4ac3cb7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="ApacheReduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="16" column="72" lean-forward="false" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +68,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
       </list>
     </option>
   </component>
@@ -273,12 +273,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571238082378</updated>
-      <workItem from="1571238086131" duration="2754000" />
+      <workItem from="1571238086131" duration="2884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2754000" />
+    <option name="totallyTimeSpent" value="2884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="208" y="23" width="1506" height="877" extended-state="0" />
@@ -361,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="72" lean-forward="false" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
