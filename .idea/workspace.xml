@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+              <caret line="16" column="98" lean-forward="false" selection-start-line="16" selection-start-column="98" selection-end-line="16" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -272,12 +272,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571238082378</updated>
-      <workItem from="1571238086131" duration="3897000" />
+      <workItem from="1571238086131" duration="3958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3897000" />
+    <option name="totallyTimeSpent" value="3958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1506" height="877" extended-state="0" />
@@ -362,7 +362,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+          <caret line="16" column="98" lean-forward="false" selection-start-line="16" selection-start-column="98" selection-end-line="16" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
