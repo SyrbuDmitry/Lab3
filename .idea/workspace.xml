@@ -22,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApacheReduce.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApacheReduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -39,16 +39,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="664600583_T_ONTIME_sample.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/664600583_T_ONTIME_sample.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,7 +86,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-166" />
+    <option name="x" value="208" />
     <option name="y" value="23" />
     <option name="width" value="1506" />
     <option name="height" value="877" />
@@ -289,15 +279,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571238082378</updated>
-      <workItem from="1571238086131" duration="2128000" />
+      <workItem from="1571238086131" duration="2137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2128000" />
+    <option name="totallyTimeSpent" value="2137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-166" y="23" width="1506" height="877" extended-state="0" />
+    <frame x="208" y="23" width="1506" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -349,20 +339,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/664600583_T_ONTIME_sample.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="119" lean-forward="true" selection-start-line="6" selection-start-column="119" selection-end-line="6" selection-end-column="119" />
           <folding />
         </state>
       </provider>
@@ -375,11 +363,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/664600583_T_ONTIME_sample.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
