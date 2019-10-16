@@ -14,7 +14,8 @@ public class ApacheReduce {
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> flights = sc.textFile("664600583_T_ONTIME_sample.csv");
         JavaRDD<String> airports = sc.textFile("L_AIRPORT_ID.csv");
-        JavaPairRDD<Tuple2<String,String>,FlightLine> = flights.mapToPair(s->)
+        JavaPairRDD<Tuple2<String,String>,FlightLine> = flights.mapToPair(
+                s.split->)
 
     }
 }
