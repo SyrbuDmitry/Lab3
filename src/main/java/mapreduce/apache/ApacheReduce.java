@@ -14,10 +14,11 @@ public class ApacheReduce {
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> flights = sc.textFile("664600583_T_ONTIME_sample.csv");
         JavaRDD<String> airports = sc.textFile("L_AIRPORT_ID.csv");
-        JavaRDD<String[]> flightsSplited = flights.map(s->Arrays.stream(s.split(",")).filter().toArray(String[]::new)
+        JavaRDD<String[]> flightsSplited = flights.map(s->Arrays.stream(s.split(","))
+                .toArray(String[]::new)
         );
-//        JavaPairRDD<Tuple2<String,String>,FlightLine> = flights.mapToPair(
-//                s->Arrays.stream(s.split(" ")))
+        JavaPairRDD<Tuple2<String,String>,FlightLine> = flights.mapToPair(
+                s->new);
 
     }
 }
