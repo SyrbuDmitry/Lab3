@@ -1,4 +1,6 @@
 package mapreduce.apache;
 
-public class FlightLine {
+import java.io.Serializable;
+
+public class FlightLine implements Serializable {
 }
