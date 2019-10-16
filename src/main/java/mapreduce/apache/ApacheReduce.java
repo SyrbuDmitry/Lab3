@@ -17,8 +17,8 @@ public class ApacheReduce {
         JavaRDD<String[]> flightsSplited = flights.map(s->Arrays.stream(s.split(","))
                 .toArray(String[]::new)
         );
-        JavaPairRDD<Tuple2<String,String>,FlightLine> = flights.mapToPair(
-                s->new);
+        JavaPairRDD<Tuple2<String,String>,FlightLine> f = flightsSplited.mapToPair(
+                s->new Tuple2<>(new Tuple2<String,String>(s[14],s[17]),new FlightLine()));
 
     }
 }
