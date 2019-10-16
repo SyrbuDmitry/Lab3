@@ -8,6 +8,6 @@ public class ApacheReduce {
     public static void main(String[] args){
         SparkConf conf = new SparkConf().setAppName("lab5");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> flights = sc.textFile()
+        JavaRDD<String> flights = sc.textFile("/Users/dmitrijsyrbu/Lab3/664600583_T_ONTIME_sample.csv")
     }
 }
