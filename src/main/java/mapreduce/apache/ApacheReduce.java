@@ -16,8 +16,8 @@ public class ApacheReduce {
         JavaRDD<String> airports = sc.textFile("L_AIRPORT_ID.csv");
         JavaRDD<String[]> flightsSplited = flights.map(s->Arrays.stream(s.split(" "))
         );
-        JavaPairRDD<Tuple2<String,String>,FlightLine> = flights.mapToPair(
-                s->Arrays.stream(s.split(" ")))
+//        JavaPairRDD<Tuple2<String,String>,FlightLine> = flights.mapToPair(
+//                s->Arrays.stream(s.split(" ")))
 
     }
 }
