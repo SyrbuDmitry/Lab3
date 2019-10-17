@@ -31,7 +31,7 @@ public class ApacheReduce {
                 return a;
             }
         });
-        
+
         res.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 }
