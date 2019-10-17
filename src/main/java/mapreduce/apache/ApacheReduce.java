@@ -63,10 +63,9 @@ public class ApacheReduce {
                   String.format("%.2f %%",((double)s._2.canceledCounter/s._2.counter)*100))
         ));
 
-        JavaRDD<ParsedData> ress = newRes.map(
-                s->new ParsedData(s,airportsBroadcasted.value()) {
-                }
-        )
+        JavaRDD<List<String>> ress = newRes.map(
+                s->Arrays.asList(s._2,airportsBroadcasted.value())
+        );
         a.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 
