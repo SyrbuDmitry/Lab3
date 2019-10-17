@@ -8,6 +8,7 @@ import org.apache.spark.api.java.function.Function2;
 import scala.Tuple2;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class ApacheReduce {
     public static void main(String[] args) {
@@ -36,7 +37,7 @@ public class ApacheReduce {
                 return new FlightLine(maxDelay,c,lc,cc);
             }
         });
-        
+        JavaPairRDD<Tuple2<String, String>,List<String>> = 
 
     }
 }
