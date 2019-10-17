@@ -62,9 +62,9 @@ public class ApacheReduce {
                   String.format("%.2f %%",((double)s._2.lateCounter/s._2.counter)*100),
                   String.format("%.2f %%",((double)s._2.canceledCounter/s._2.counter)*100))
         ));
-
+        String n = airportsBroadcasted.value().get("1234");
         JavaRDD<List<String>> ress = newRes.map(
-                s->Arrays.asList(s._2,airportsBroadcasted.value().get(s._1))
+                s->Arrays.asList(s._2.toString(),airportsBroadcasted.value().get(s._1._1))
         );
         a.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
