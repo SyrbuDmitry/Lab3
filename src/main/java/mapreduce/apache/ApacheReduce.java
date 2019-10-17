@@ -1,5 +1,6 @@
 package mapreduce.apache;
 
+import com.sun.corba.se.spi.orb.ParserData;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -62,8 +63,9 @@ public class ApacheReduce {
                   String.format("%.2f %%",((double)s._2.canceledCounter/s._2.counter)*100))
         ));
 
-        JavaRDD<String> ress = newRes.map(
-                s->
+        JavaRDD<ParserData> ress = newRes.map(
+                s->new ParsedData(s,airportsBroadcasted.value()) {
+                }
         )
         a.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
