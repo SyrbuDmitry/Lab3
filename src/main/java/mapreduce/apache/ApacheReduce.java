@@ -31,7 +31,7 @@ public class ApacheReduce {
                         .toArray(String[]::new)
                 );
 
-        JavaPairRDD<String,AirportData> a = airportsSplited.mapToPair(
+        JavaPairRDD<String,String> a = airportsSplited.mapToPair(
                 s->new Tuple2<>(s[0].replaceAll("\"",""),s[1])
         );
 
