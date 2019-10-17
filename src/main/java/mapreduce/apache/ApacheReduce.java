@@ -23,7 +23,9 @@ public class ApacheReduce {
         JavaPairRDD<Tuple2<String,String>,FlightLine> res = f.reduceByKey(new Function2<FlightLine,FlightLine,FlightLine>(){
             @Override
             public FlightLine call(FlightLine a,FlightLine b){
-
+                if(a.delay<b.delay)
+                    a.delay = b.delay;
+                return a;
             }
         });
     }
