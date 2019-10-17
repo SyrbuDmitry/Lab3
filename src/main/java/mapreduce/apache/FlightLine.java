@@ -18,6 +18,7 @@ public class FlightLine implements Serializable {
         this.canceledCounter=canceledCounter;
     }
     FlightLine(String d, String canceled){
+        counter=1;
         if (canceled.equals("0.00")){
             if (d.equals(""))
                 delay=0;
@@ -29,7 +30,7 @@ public class FlightLine implements Serializable {
             }
         }else{
             isCanceled=true;
-            canceledCounter = 1;
+             canceledCounter= 1;
             maxDelay=delay=-1;
         }
     }
