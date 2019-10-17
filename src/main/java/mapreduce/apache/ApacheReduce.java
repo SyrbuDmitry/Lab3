@@ -52,7 +52,7 @@ public class ApacheReduce {
                   String.format("%.2f %%",((double)s._2.lateCounter/s._2.counter)*100),
                   String.format("%.2f %%",((double)s._2.canceledCounter/s._2.counter)*100))
         ));
-        airports.collectAs.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
+        airportsSplited.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 
 }
