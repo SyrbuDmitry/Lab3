@@ -39,8 +39,8 @@ public class ApacheReduce {
                 return new FlightLine(maxDelay,c,lc,cc);
             }
         });
-        JavaPairRDD<Tuple2<String, String>,List<String>> = res.mapToPair(
-          s->new Tuple2<>(s._1,new ArrayList<String>(String.valueOf(s._2.delay)))
+        JavaPairRDD<Tuple2<String, String>,List<String>> newRes = res.mapToPair(
+          s->new Tuple2<>(s._1,Arrays)
         );
 
     }
