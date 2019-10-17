@@ -27,8 +27,8 @@
       <file leaf-file-name="ApacheReduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+            <state relative-caret-position="405">
+              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +80,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="236" />
-    <option name="y" value="122" />
+    <option name="x" value="74" />
+    <option name="y" value="35" />
     <option name="width" value="1506" />
     <option name="height" value="877" />
   </component>
@@ -273,15 +273,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571238082378</updated>
-      <workItem from="1571238086131" duration="9147000" />
+      <workItem from="1571238086131" duration="9166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9147000" />
+    <option name="totallyTimeSpent" value="9166000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="236" y="122" width="1506" height="877" extended-state="0" />
+    <frame x="74" y="35" width="1506" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -362,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        <state relative-caret-position="405">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
