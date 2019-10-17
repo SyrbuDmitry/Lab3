@@ -8,11 +8,12 @@ public class FlightLine implements Serializable {
     public double delay;
     public boolean isCanceled;
     public FlightLine(String d, String canceled){
-        if (canceled.equals("0.00")){
+        if (canceled.equals("0.00") && !d.equals("")){
             delay = Double.parseDouble(d);
             isCanceled = false;
         }else{
             isCanceled=true;
+            delay=-1;
         }
     }
 }

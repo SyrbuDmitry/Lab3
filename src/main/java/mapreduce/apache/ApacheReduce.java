@@ -23,15 +23,14 @@ public class ApacheReduce {
         JavaPairRDD<Tuple2<String,String>,FlightLine> f = flightsSplited.mapToPair(
                 s->new Tuple2<>(new Tuple2<>(s[11],s[14]),new FlightLine(s[18],s[19])));
 
-//        JavaPairRDD<Tuple2<String,String>,FlightLine> res = f.reduceByKey(new Function2<FlightLine,FlightLine,FlightLine>(){
-//            @Override
-//            public FlightLine call(FlightLine a,FlightLine b){
-//                if(a.delay<b.delay)
-//                    a.delay = b.delay;
-//                return a;
-//            }
-//        });
-
-        f.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
+        JavaPairRDD<Tuple2<String,String>,FlightLine> res = f.reduceByKey(new Function2<FlightLine,FlightLine,FlightLine>(){
+            @Override
+            public FlightLine call(FlightLine a,FlightLine b){
+                if(a.delay<b.delay)
+                    a.delay = b.delay;
+                return a;
+            }
+        });
+        
     }
 }
