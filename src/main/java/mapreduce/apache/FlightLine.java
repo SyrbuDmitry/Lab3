@@ -30,7 +30,7 @@ public class FlightLine implements Serializable {
             }
         }else{
             isCanceled=true;
-             canceledCounter= 1;
+            canceledCounter= 1;
             maxDelay=delay=-1;
         }
     }
