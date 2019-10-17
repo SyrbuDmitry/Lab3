@@ -63,7 +63,7 @@ public class ApacheReduce {
                   String.format("%.2f %%",((double)s._2.canceledCounter/s._2.counter)*100))
         ));
 
-        JavaRDD<ParserData> ress = newRes.map(
+        JavaRDD<ParsedData> ress = newRes.map(
                 s->new ParsedData(s,airportsBroadcasted.value()) {
                 }
         )
