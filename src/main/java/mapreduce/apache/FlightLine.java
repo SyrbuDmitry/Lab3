@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class FlightLine implements Serializable {
     public double delay;
     public boolean isCanceled;
-    FlightLine(String delay, String canceled){
+    public FlightLine(String delay, String canceled){
         double c = Double.parseDouble(canceled);
         if(c == 1) {
             this.delay = -1;
