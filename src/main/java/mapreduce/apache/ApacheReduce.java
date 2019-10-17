@@ -13,7 +13,7 @@ public class ApacheReduce {
     public static void main(String[] args){
         SparkConf conf = new SparkConf().setAppName("lab5");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> flights = sc.textFile("hdfs://664600583_T_ONTIME_sample.csv");
+        JavaRDD<String> flights = sc.textFile("/user/dmitrijsyrbu/664600583_T_ONTIME_sample.csv");
         JavaRDD<String[]> flightsSplited = flights.map(s->Arrays.stream(s.split(","))
                 .toArray(String[]::new)
         );
@@ -27,6 +27,6 @@ public class ApacheReduce {
                 return a;
             }
         });
-        res.saveAsTextFile("hdfs://sparkoutput");
+        res.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 }
