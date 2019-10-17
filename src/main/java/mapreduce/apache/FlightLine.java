@@ -10,6 +10,7 @@ public class FlightLine implements Serializable {
     public boolean isCanceled;
     public int counter,lateCounter,canceledCounter;
     FlightLine(){}
+
     FlightLine(double delay, int counter, int lateCounter, int canceledCounter){
         this.delay=delay;
         this.counter=counter;
