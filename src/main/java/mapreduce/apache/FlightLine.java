@@ -20,18 +20,18 @@ public class FlightLine implements Serializable {
     FlightLine(String d, String canceled){
         counter=1;
         if (canceled.equals("0.00")){
+            isCanceled = false;
             if (d.equals(""))
                 delay=0;
             else {
                 delay = Double.parseDouble(d);
                 if(delay!=0)
                     lateCounter = 1;
-                isCanceled = false;
             }
         }else{
             isCanceled=true;
             canceledCounter= 1;
-            maxDelay=delay=-1;
+            delay=-1;
         }
     }
 }
