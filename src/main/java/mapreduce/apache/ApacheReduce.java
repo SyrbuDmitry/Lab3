@@ -66,7 +66,7 @@ public class ApacheReduce {
         JavaRDD<List<String>> ress = newRes.map(
                 s->Arrays.asList(airportsBroadcasted.value().get(s._1._1),airportsBroadcasted.value().get(s._1._2),s._2.toString())
         );
-        a.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
+        ress.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 
 }
