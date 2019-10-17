@@ -10,27 +10,33 @@ import scala.Tuple2;
 import java.util.Arrays;
 
 public class ApacheReduce {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab5");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> flights = sc.textFile("/user/dmitrijsyrbu/664600583_T_ONTIME_sample.csv");
         JavaRDD<String[]> flightsSplited = flights
-                .filter(x->!x.startsWith("\"YEAR\""))
-                .map(s->Arrays.stream(s.split(","))
-                .toArray(String[]::new)
-        );
+                .filter(x -> !x.startsWith("\"YEAR\""))
+                .map(s -> Arrays.stream(s.split(","))
+                        .toArray(String[]::new)
+                );
 
-        JavaPairRDD<Tuple2<String,String>,FlightLine> f = flightsSplited.mapToPair(
-                s->new Tuple2<>(new Tuple2<>(s[11],s[14]),new FlightLine(s[18],s[19])));
+        JavaPairRDD<Tuple2<String, String>, FlightLine> f = flightsSplited.mapToPair(
+                s -> new Tuple2<>(new Tuple2<>(s[11], s[14]), new FlightLine(s[18], s[19])));
 
-        JavaPairRDD<Tuple2<String,String>,FlightLine> res = f.reduceByKey(new Function2<FlightLine,FlightLine,FlightLine>(){
+        JavaPairRDD<Tuple2<String, String>, FlightLine> res = f.reduceByKey(new Function2<FlightLine, FlightLine, FlightLine>() {
             @Override
-            public FlightLine call(FlightLine a,FlightLine b){
-                if(a.delay<b.delay)
-                    a.delay = b.delay;
-                return a;
+            public FlightLine call(FlightLine a, FlightLine b) {
+                double maxDelay = 0;
+                if(a.delay>b.delay)
+                    maxDelay = a.delay;
+                else maxDelay=b.delay;
+                int c = a.counter+b.counter;
+                int lc = a.lateCounter+b.lateCounter;
+                int cc = a.canceledCounter+b.canceledCounter;
+                return new FlightLine(maxDelay,c,lc,cc);
             }
         });
+        
 
     }
 }

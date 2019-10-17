@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="533f3228-f4a6-4b3b-841f-fc90b4ac3cb7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="ApacheReduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="568">
+              <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +40,8 @@
       <file leaf-file-name="FlightLine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="240">
+              <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +74,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
       </list>
     </option>
   </component>
@@ -277,12 +278,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571238082378</updated>
-      <workItem from="1571238086131" duration="13721000" />
+      <workItem from="1571238086131" duration="14791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13721000" />
+    <option name="totallyTimeSpent" value="14791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1506" height="877" extended-state="0" />
@@ -356,8 +357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="240">
+          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -366,8 +367,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="568">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
