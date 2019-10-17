@@ -18,12 +18,13 @@ public class ApacheReduce {
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> flights = sc.textFile("/user/dmitrijsyrbu/664600583_T_ONTIME_sample.csv");
         JavaRDD<String> airports = sc.textFile("/user/dmitrijsyrbu/L_AIRPORT_ID.csv");
+
         JavaRDD<String[]> airportsSplited = airports
                 .filter(x -> !x.startsWith("Code"))
                 .map(s -> Arrays.stream(s.split(",(?=\")"))
                         .toArray(String[]::new)
                 );
-        
+
         JavaRDD<String[]> flightsSplited = flights
                 .filter(x -> !x.startsWith("\"YEAR\""))
                 .map(s -> Arrays.stream(s.split(","))
