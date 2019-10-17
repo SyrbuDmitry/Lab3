@@ -14,8 +14,9 @@ public class ApacheReduce {
         SparkConf conf = new SparkConf().setAppName("lab5");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> flights = sc.textFile("/user/dmitrijsyrbu/664600583_T_ONTIME_sample.csv");
-        JavaRDD<String[]> flightsSplited = flights.map(s->Arrays.stream(s.split(","))
-                .filter(x->!x.startsWith("A"))
+        JavaRDD<String[]> flightsSplited = flights
+                .filter(x->!x.startsWith("\"YEAR\""))
+                .map(s->Arrays.stream(s.split(","))
                 .toArray(String[]::new)
         );
 
