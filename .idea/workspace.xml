@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="533f3228-f4a6-4b3b-841f-fc90b4ac3cb7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" afterPath="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApacheReduce.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApacheReduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlightLine.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FlightLine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +73,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java" />
       </list>
     </option>
   </component>
@@ -278,12 +278,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571238082378</updated>
-      <workItem from="1571238086131" duration="10718000" />
+      <workItem from="1571238086131" duration="10773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10718000" />
+    <option name="totallyTimeSpent" value="10773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-195" y="23" width="1506" height="877" extended-state="0" />
@@ -355,20 +355,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/FlightLine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapreduce/apache/ApacheReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="510">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
