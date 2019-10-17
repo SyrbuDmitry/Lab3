@@ -5,8 +5,10 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function2;
+import scala.Array;
 import scala.Tuple2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,7 +40,7 @@ public class ApacheReduce {
             }
         });
         JavaPairRDD<Tuple2<String, String>,List<String>> = res.mapToPair(
-          s->
+          s->new Tuple2<>(s._1,new ArrayList<String>(String.valueOf(s._2.delay)))
         );
 
     }
