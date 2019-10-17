@@ -32,7 +32,7 @@ public class ApacheReduce {
                 );
 
         JavaPairRDD<String,String> a = airportsSplited.mapToPair(
-                s->new Tuple2<>(s[0],s[1])
+                s->new Tuple2<>(s[0].replaceAll("\"",""),s[1])
         );
 
         JavaPairRDD<Tuple2<String, String>, FlightLine> f = flightsSplited.mapToPair(
