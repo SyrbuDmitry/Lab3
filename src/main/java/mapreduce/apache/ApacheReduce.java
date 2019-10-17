@@ -56,7 +56,7 @@ public class ApacheReduce {
                   String.format("%.2f %%",((double)s._2.lateCounter/s._2.counter)*100),
                   String.format("%.2f %%",((double)s._2.canceledCounter/s._2.counter)*100))
         ));
-        airportsSplited.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
+        a.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 
 }
