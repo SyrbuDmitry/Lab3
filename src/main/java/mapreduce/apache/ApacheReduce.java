@@ -37,7 +37,7 @@ public class ApacheReduce {
                 s->new Tuple2<>(s[0].replaceAll("\"",""),s[1])
         );
         Map<String,String> airportMap = a.collectAsMap();
-        
+
         final Broadcast<Map<String, String>> airportsBroadcasted = sc.broadcast(airportMap);
 
         JavaPairRDD<Tuple2<String, String>, FlightLine> f = flightsSplited.mapToPair(
@@ -61,6 +61,10 @@ public class ApacheReduce {
                   String.format("%.2f %%",((double)s._2.lateCounter/s._2.counter)*100),
                   String.format("%.2f %%",((double)s._2.canceledCounter/s._2.counter)*100))
         ));
+
+        JavaRDD<String> ress = newRes.map(
+                s->
+        )
         a.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 
