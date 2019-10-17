@@ -11,7 +11,7 @@ public class FlightLine implements Serializable {
         if(canceled.equals("1.00")) {
             this.delay = -1;
             isCanceled = true;
-        } else if(canceled.equals("0.00"))  {
+        } else if(canceled.equals("0.00")){
             isCanceled = false;
             this.delay = Double.parseDouble(d);
         }
