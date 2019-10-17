@@ -28,6 +28,6 @@ public class ApacheReduce {
                 return a;
             }
         });
-        
+        System.out.println(res.collect());
     }
 }
