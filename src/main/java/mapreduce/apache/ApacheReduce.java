@@ -32,6 +32,6 @@ public class ApacheReduce {
 //            }
 //        });
 
-        flightsSplited.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
+        f.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
 }
