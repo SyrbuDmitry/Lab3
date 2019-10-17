@@ -31,6 +31,6 @@ public class ApacheReduce {
                 return a;
             }
         });
-        
+
     }
 }
