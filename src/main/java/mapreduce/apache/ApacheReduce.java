@@ -37,7 +37,9 @@ public class ApacheReduce {
                 return new FlightLine(maxDelay,c,lc,cc);
             }
         });
-        JavaPairRDD<Tuple2<String, String>,List<String>> = 
+        JavaPairRDD<Tuple2<String, String>,List<String>> = res.mapToPair(
+          s->
+        );
 
     }
 }
