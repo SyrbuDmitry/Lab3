@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 public class FlightLine implements Serializable {
     public double delay;
+    public double maxDelay = 0;
     public boolean isCanceled;
     public int counter;
     public FlightLine(String d, String canceled){
