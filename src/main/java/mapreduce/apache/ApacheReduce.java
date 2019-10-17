@@ -44,6 +44,7 @@ public class ApacheReduce {
                   String.valueOf(s._2.lateCounter/s._2.counter),
                   String.valueOf(s._2.canceledCounter/s._2.counter))
         ));
+        newRes.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
-        
+
 }
