@@ -64,7 +64,7 @@ public class ApacheReduce {
         ));
         String n = airportsBroadcasted.value().get("1234");
         JavaRDD<List<String>> ress = newRes.map(
-                s->Arrays.asList(s._2.toString(),airportsBroadcasted.value().get(s._1._1))
+                s->Arrays.asList(airportsBroadcasted.value().get(s._1._1),airportsBroadcasted.value().get(s._1._2),s._2.toString())
         );
         a.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
