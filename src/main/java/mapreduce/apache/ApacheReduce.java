@@ -41,8 +41,8 @@ public class ApacheReduce {
         });
         JavaPairRDD<Tuple2<String, String>,List<String>> newRes = res.mapToPair(
           s->new Tuple2<>(s._1,Arrays.asList(String.valueOf(s._2.delay),
-                  String.valueOf(s._2.lateCounter/s._2.counter),
-                  String.valueOf(s._2.canceledCounter/s._2.counter))
+                  String.valueOf((double)s._2.lateCounter/s._2.counter),
+                  String.valueOf((double)s._2.canceledCounter/s._2.counter))
         ));
         newRes.saveAsTextFile("/user/dmitrijsyrbu/sparkoutput");
     }
