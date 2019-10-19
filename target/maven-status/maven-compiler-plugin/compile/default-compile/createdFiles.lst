@@ -1,1 +1,3 @@
-mapreduce/apache/AirportData.class
+mapreduce/apache/DataTransformer.class
+mapreduce/apache/DataTransformer$1.class
+mapreduce/apache/ReduceFunc.class
