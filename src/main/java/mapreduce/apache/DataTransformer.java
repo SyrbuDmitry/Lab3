@@ -11,6 +11,11 @@ import java.util.List;
 import java.util.Map;
 
 public class DataTransformer {
+    private static final String AIRPORT_HEADER = "Code";
+    private static final String airportSplitRegex = ",(?=\")";
+    private static final String flightSplitRegex = ",";
+    private static final String FLIGHT_HEADER = "\"YEAR\"";
+
     public static Function2<FlightLine, FlightLine, FlightLine> reduceFunc = new Function2<FlightLine, FlightLine, FlightLine>(){
         @Override
         public FlightLine call(FlightLine a, FlightLine b) {
@@ -24,17 +29,18 @@ public class DataTransformer {
             return new FlightLine(maxDelay, c, lc, cc);
         }
     };
+    
     public static JavaRDD<String[]> splitAirports(JavaRDD<String> airports){
         return airports
-                .filter(x -> !x.startsWith("Code"))
-                .map(s -> Arrays.stream(s.split(",(?=\")"))
+                .filter(x -> !x.startsWith(AIRPORT_HEADER))
+                .map(s -> Arrays.stream(s.split(airportSplitRegex))
                         .toArray(String[]::new));
     }
 
     public static JavaRDD<String[]> splitFlights(JavaRDD<String> flights){
         return flights
-                .filter(x -> !x.startsWith("\"YEAR\""))
-                .map(s -> Arrays.stream(s.split(","))
+                .filter(x -> !x.startsWith(FLIGHT_HEADER))
+                .map(s -> Arrays.stream(s.split(flightSplitRegex))
                         .toArray(String[]::new)
                 );
     }
